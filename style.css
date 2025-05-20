@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #143d62;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.cell{
+height: 18vmin;
+width: 18vmin;
+border-radius: 1rem;
+border: none;
+box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+font-size: 8vmin;
+color: rgb(101, 117, 130);
+background-color: whitesmoke;
+}
+
+#resetbtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: aqua;
+    border-radius: 1rem;
+    border: none;
+}
+
+#newbtn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: aqua;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: aliceblue;
+    font-size: 8vmin;
+    color: gold;
+    text-shadow: 2px 2px 5px red;
+    animation: popup 2s ease-in-out;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes popup {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#playerProfiles {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aqua;
+}
+
+  
